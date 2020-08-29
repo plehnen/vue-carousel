@@ -7,7 +7,8 @@
       class="VueCarousel-wrapper"
       ref="VueCarousel-wrapper"
     >
-      <div
+      <component
+        :is="innerTagName"
         ref="VueCarousel-inner"
         :class="[
           'VueCarousel-inner',
@@ -26,7 +27,7 @@
         }"
       >
         <slot></slot>
-      </div>
+      </component>
     </div>
 
     <slot name="navigation" v-if="navigationEnabled">
@@ -323,6 +324,13 @@ export default {
     tagName: {
       type: String,
       default: "slide"
+    },
+    /**
+     * Name (tag) of inner wrapper component
+     */
+    innerTagName: {
+      type: String,
+      default: "div"
     },
     /**
      * Support for v-model functionality
