@@ -10,7 +10,7 @@
       'VueCarousel-slide-adjustableHeight': isAdjustableHeight
     }"
   >
-    <slot></slot>
+    <slot :is-active="isActive"></slot>
   </div>
 </template>
 
