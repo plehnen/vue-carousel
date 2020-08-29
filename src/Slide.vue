@@ -61,7 +61,14 @@ export default {
       let i = 0;
       while (i < breakpointSlidesPerPage) {
         const child = children[currentPage * breakpointSlidesPerPage + i];
+        if (child === undefined) break;
         activeSlides.push(child);
+        i++;
+      }
+      i = 1;
+      while (currentPage > 0 && activeSlides.length < breakpointSlidesPerPage) {
+        const child = children[currentPage * breakpointSlidesPerPage - i];
+        activeSlides.unshift(child);
         i++;
       }
 

@@ -97,7 +97,7 @@ exports[`Carousel component Autoplay functionality should not reset autoplay whe
   <div class="VueCarousel-wrapper">
     <div class="VueCarousel-inner" style="transform: translate(0px, 0); visibility: hidden; height: auto;">
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center"></div>
-      <div tabindex="-1" aria-hidden="true" role="tabpanel" class="VueCarousel-slide"></div>
+      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
     </div>
   </div>
   <!---->
@@ -112,7 +112,7 @@ exports[`Carousel component Autoplay functionality should reset autoplay when sw
   <div class="VueCarousel-wrapper">
     <div class="VueCarousel-inner" style="transform: translate(0px, 0); visibility: hidden; height: auto;">
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center"></div>
-      <div tabindex="-1" aria-hidden="true" role="tabpanel" class="VueCarousel-slide"></div>
+      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
     </div>
   </div>
   <!---->
@@ -141,7 +141,7 @@ exports[`Carousel component Carousel navigation should render the navigation com
   <div class="VueCarousel-wrapper">
     <div class="VueCarousel-inner" style="transform: translate(0px, 0); visibility: hidden; height: auto;">
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
-      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
+      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active"></div>
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active"></div>
     </div>
   </div>
@@ -167,7 +167,7 @@ exports[`Carousel component Carousel slides per page should fall back to default
   <div class="VueCarousel-wrapper">
     <div class="VueCarousel-inner" style="transform: translate(0px, 0); visibility: hidden; height: auto;">
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
-      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide" aria-hidden="true"></div>
+      <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active"></div>
       <div tabindex="-1" role="tabpanel" class="VueCarousel-slide VueCarousel-slide-active"></div>
     </div>
   </div>
