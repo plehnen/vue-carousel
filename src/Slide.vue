@@ -4,7 +4,7 @@
     class="VueCarousel-slide"
     tabindex="-1"
     :aria-hidden="!isActive"
-    role="tabpanel"
+    :role="isNavigationRequired ? 'tabpanel' : undefined"
     :class="{
       'VueCarousel-slide-active': isActive,
       'VueCarousel-slide-center': isCenter,
@@ -101,6 +101,14 @@ export default {
     isAdjustableHeight() {
       const { adjustableHeight } = this.carousel;
       return adjustableHeight;
+    },
+    /**
+     * `isNavigationRequired` Is navigation required?
+     * @return {Boolean}
+     */
+    isNavigationRequired() {
+      const { isNavigationRequired } = this.carousel;
+      return isNavigationRequired;
     }
   },
   methods: {
