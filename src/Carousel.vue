@@ -8,7 +8,7 @@
       ref="VueCarousel-wrapper"
     >
       <component
-        :is="innerTagName"
+        :is="tag"
         ref="VueCarousel-inner"
         :class="[
           'VueCarousel-inner',
@@ -326,9 +326,9 @@ export default {
       default: "slide"
     },
     /**
-     * Name (tag) of inner wrapper component
+     * Tag of inner wrapper component
      */
-    innerTagName: {
+    tag: {
       type: String,
       default: "div"
     },

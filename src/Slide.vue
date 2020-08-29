@@ -1,5 +1,6 @@
 <template>
-  <div
+  <component
+    :is="tag"
     class="VueCarousel-slide"
     tabindex="-1"
     :aria-hidden="!isActive"
@@ -11,13 +12,25 @@
     }"
   >
     <slot :is-active="isActive"></slot>
-  </div>
+  </component>
 </template>
 
 <script>
 export default {
   name: "slide",
-  props: ["title"],
+  props: {
+    title: {
+      type: String,
+      default: undefined
+    },
+    /**
+     * Tag of wrapper component
+     */
+    tag: {
+      type: String,
+      default: "div"
+    }
+  },
   data() {
     return {
       width: null
