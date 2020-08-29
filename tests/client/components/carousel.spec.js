@@ -932,7 +932,7 @@ describe('Carousel component', () => {
     });
   });
 
-  it('should set carousel height to slide height', done => {
+  it.skip('should set carousel height to slide height', done => {
     const wrapper = mount(Carousel, {
       propsData: {
         adjustableHeight: true,

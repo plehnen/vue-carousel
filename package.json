@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/ssense/vue-carousel#readme",
   "dependencies": {
-    "global": "^4.3.2",
-    "regenerator-runtime": "^0.12.1",
-    "vue": "^2.5.17"
+    "global": "^4.4.0",
+    "regenerator-runtime": "^0.13.7",
+    "vue": "^2.6.11"
   },
   "resolutions": {
      "babel-core": "7.0.0-bridge.0"
@@ -77,7 +77,7 @@
     "vue-play": "^3.2.1",
     "vue-play-cli": "^1.1.1",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.5.17",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.4"
