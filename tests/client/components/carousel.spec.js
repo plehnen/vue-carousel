@@ -482,13 +482,13 @@ describe('Carousel component', () => {
     it('should render the pagination component when pagination is enabled', () => {
       const wrapper = mount(Carousel);
 
-      expect(wrapper.find({ name: 'pagination' }).exists()).toBe(true);
+      expect(wrapper.findComponent({ name: 'pagination' }).exists()).toBe(true);
     });
 
     it('should not render the pagination component when pagination is disabled', () => {
       const wrapper = mount(Carousel, { propsData: { paginationEnabled: false } });
 
-      expect(wrapper.find({ name: 'pagination' }).exists()).toBe(false);
+      expect(wrapper.findComponent({ name: 'pagination' }).exists()).toBe(false);
     });
 
     it('should move the carousel to page 1', async () => {
